@@ -1,0 +1,66 @@
+<html>
+<head>
+<title>IPR status</title> <!--Heading in the title bar -->
+
+<style>
+
+body {                                   
+  background-image: url('final.PNG');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  }/* Inserting a background image*/
+
+
+table
+{
+color:black;
+background-color:#00b2f2;
+border-radius:25px;
+}/* for changing colour of table*/
+
+#btn
+{
+background-color:#eef200;
+color:black;
+height:40px;
+width:100px;
+border-radius:25px;
+}/* For styling the submit buttom*/
+
+</style>
+</head>
+
+<br><br>
+<h1 align="center"><b><u><font color="#5D001E" face="Times New Roman">IPR Details form</font></u></b></h1> <!-- Title of the webpage-->
+
+<body  bgcolor="#ededf2">
+<br><br><br> 
+
+<form action="three.php" method="post"><!-- Linking it to the php file-->
+<table align="center" border="0" cellspacing="30">
+<!-- Here all the fields are mentioned-->
+<tr>
+<td><b>Name</b><td><input type="text" placeholder="Name" name="stname" required></td></tr>
+
+<tr>
+<td><b>USN</b><td><input type="text" placeholder="USN" name="usn" required></td></tr>
+
+
+<tr>
+<td><b>IPR Completed Status</b><td><input type="radio" name="r1" value="Completed" required>Completed<input type="radio" name="r1" value="Pending">Pending</td></tr>
+
+<tr>
+<td><b>IPR Completed Under</b><td><input type="radio" name="r2" value="NPTEL" required> NPTEL<input type="radio" name="r2" value="Coursera"> Coursera<input type="radio" name="r2" value="WIPO"> WIPO<input type="radio" name="r2" value="Other">Other</td></tr>
+
+<tr>
+<td><b>IPR Score</b><td><input type="number" placeholder="Your score" name="score" required></td></tr>
+
+<tr><td align="center" colspan="3">
+<input type="Submit" id="btn" name="save" value="Submit"></a></td>
+</tr>
+
+</form>
+</table>
+</body>
+</html>
