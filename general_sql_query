@@ -1,0 +1,14 @@
+CREATE DATABASE business;
+
+CREATE TABLE students(
+name varchar(50),
+usn varchar(50),
+status varchar(50),
+website varchar(50),
+score int(10)
+);
+
+INSERT INTO students(name,usn,status,website,score)
+	VALUES ('Aniruddha','2GI17EC016','completed','coursera','100')";
+
+	SELECT * from students;
